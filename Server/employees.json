@@ -1,0 +1,22 @@
+{
+  "employees": [
+    {
+      "id": 1,
+      "employee_name": "kamran khan",
+      "employee_salary": "6724",
+      "employee_age": "13"
+    },
+    {
+      "id": 2,
+      "employee_name": "Imran Khan",
+      "employee_salary": "2232",
+      "employee_age": "24"
+    },
+    {
+      "id": 3,
+      "employee_name": "suhail khan",
+      "employee_salary": "67872",
+      "employee_age": "24"
+    }
+  ]
+}

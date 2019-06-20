@@ -1,0 +1,30 @@
+<div class="col-md-12">  
+  <h2 class="text-center text-info userheading"> User Details</h2>  
+  <button (click)="tolist()" class="btn btn-outline-dark mr-2">List Employees</button>
+  <button (click)="toadd()" class="btn btn-outline-primary">Add Employee</button>
+  <div id="tabli-holder" class="table-responsive table-container">  
+    <table class="table">  
+      <thead>  
+        <tr>  
+          <th>Id</th>  
+          <th>Employee Name</th>  
+          <th>Salary</th>  
+          <th>Age</th>  
+        </tr>  
+      </thead>  
+      <tbody>  
+        <tr *ngFor="let emp of employees">  
+          <td class="hidden">{{emp.id}}</td>  
+          <td>{{emp.employee_name}}</td>  
+          <td> <i style="color: #FFD700;" class="fa fa-usd"></i> {{emp.employee_salary}}  </td>  
+          <td>{{emp.employee_age}}</td>  
+          <td>  
+            <i (click)="deleteEmp(emp)" class="fa fa-trash text-danger mr-4" > </i>  
+            <i (click)="editEmp(emp)" class="fa fa-pencil text-info ml-4" > </i>  
+            <!-- <button (click)="editEmp(emp)" style="margin-left: 20px;" class="btn btn-info"> Edit</button>   -->
+          </td>  
+        </tr>  
+      </tbody>  
+    </table>  
+  </div>  
+</div>  
